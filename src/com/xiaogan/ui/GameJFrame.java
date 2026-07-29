@@ -22,7 +22,6 @@ public class GameJFrame extends JFrame implements ActionListener,KeyListener{
     };
 
     JMenuItem replayItem = new JMenuItem("重新游戏");
-    JMenuItem reloginItem = new JMenuItem("重新登录");
     JMenuItem closeItem = new JMenuItem("关闭游戏");
     JMenuItem accountItem = new JMenuItem("公众号");
 
@@ -138,13 +137,11 @@ public class GameJFrame extends JFrame implements ActionListener,KeyListener{
         }
 
         replayItem.addActionListener(this);
-        reloginItem.addActionListener(this);
         closeItem.addActionListener(this);
         accountItem.addActionListener(this);
 
         functionMenu.add(changeImage);
         functionMenu.add(replayItem);
-        functionMenu.add(reloginItem);
         functionMenu.add(closeItem);
 
         aboutMenu.add(accountItem);
@@ -312,11 +309,6 @@ public class GameJFrame extends JFrame implements ActionListener,KeyListener{
 
         if(source == replayItem){
             replay();
-        }
-
-        if(source == reloginItem){
-            new LoginJFrame();
-            this.setVisible(false);
         }
 
         if(source == closeItem){
