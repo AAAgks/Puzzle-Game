@@ -18,7 +18,7 @@ Java Swing 实现的 4×4 经典滑块拼图游戏。
 | ← → ↑ ↓ | 移动空白格（相邻切片滑入空白位置） |
 | 空格 | 长按预览完整图片（松开恢复拼图） |
 | 回车 | 一键完成（直接显示复原结果） |
-| 菜单栏 | 切换图片集 / 重新游戏 / 重新登录 |
+| 菜单栏 | 切换图片集 / 重新游戏 |
 
 ## 移动逻辑
 
@@ -57,9 +57,7 @@ puzzle game/
 │   ├── App.java                    # 入口
 │   └── com/xiaogan/
 │       ├── ui/
-│       │   ├── GameJFrame.java     # 游戏主窗口（核心）
-│       │   ├── LoginJFrame.java    # 登录窗口
-│       │   └── RegisterJFrame.java # 注册窗口
+│       │   └── GameJFrame.java     # 游戏主窗口（核心）
 │       └── test/                   # 测试代码（与主项目无关）
 ├── image/                          # 图片资源
 │   ├── animal/  (animal1~8)
@@ -67,7 +65,6 @@ puzzle game/
 │   ├── sport/   (sport1~10)
 │   ├── background.png
 │   ├── win.png
-│   └── login/ & register/
 └── puzzle game.iml
 ```
 
